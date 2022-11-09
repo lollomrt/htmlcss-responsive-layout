@@ -5,9 +5,119 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <title>Responsive Layout</title>
     </head>
     <body>
-        
+
+        <!-- Header -->
+
+        <header>
+            <div class="container">
+                <div class="row space-between">                    
+                    <div class="logo-container">
+                        <img src="./img/logo.png" alt="logo">
+                    </div>                
+                    <nav class="nav-desktop">
+                        <ul>
+                            <li><a href="#">Planning</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#"><button class="btn btn-white">Get Started</button></a></li>
+                        </ul>
+                    </nav>
+                    <!-- Hamburger -->
+                    <nav class="nav-hamburger">
+                        <div class="hamburger">
+                            <i class="fa-solid fa-bars"></i>
+                            <ul>
+                                <li><a href="#">Planning</a></li>
+                                <li><a href="#">Testimonials</a></li>
+                                <li><a href="#">Features</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#"><button class="btn btn-white">Get Started</button></a></li>
+                            </ul>
+                        </div>
+                    </nav>                    
+                </div>
+            </div>
+        </header>
+
+        <!-- Main -->
+
+        <main>
+            <div class="sfondo-white sezione-1 padding-bottom-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-33">
+                            <div class="card padding-top-40">
+                                <div class="text-align-left">
+                                    <h3>Get a demo application</h3>
+                                    <p class="padding-top-bottom-40">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod ratione voluptatibus enim distinctio, molestias repellendus accusamus. Cumque officiis vitae.</p>
+                                    <a href="#"><button class="btn btn-blue"><i class="fa-brands fa-apple"></i>App store</button></a>
+                                </div>
+                                <div>
+                                    <img class="padding-top-40" src="./img/phone.png" alt="telefono">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-33">
+                            <div class="card padding-top-bottom-40">                                
+                                <i class="logo-card fa-solid fa-file-code"></i>
+                                <h3 class="padding-top-bottom-40">Clean Code</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod ratione voluptatibus enim distinctio, molestias repellendus accusamus. Cumque officiis vitae.</p>
+                            </div>
+                        </div>
+                        <div class="col col-33">
+                            <div class="card padding-top-bottom-40">                                
+                                <i class="logo-card fa-solid fa-compass-drafting"></i>
+                                <h3 class="padding-top-bottom-40">Web Design</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod ratione voluptatibus enim distinctio, molestias repellendus accusamus. Cumque officiis vitae.</p>
+                            </div>
+                        </div>
+                        <div class="col col-33">
+                            <div class="card padding-top-bottom-40">                                
+                                <i class="logo-card fa-solid fa-laptop-code"></i>
+                                <h3 class="padding-top-bottom-40">Development</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod ratione voluptatibus enim distinctio, molestias repellendus accusamus. Cumque officiis vitae.</p>
+                            </div>
+                        </div>
+                        <div class="col col-33">
+                            <div class="card padding-top-bottom-40">                                
+                                <i class="logo-card fa-solid fa-bullhorn"></i>
+                                <h3 class="padding-top-bottom-40">Branding</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod ratione voluptatibus enim distinctio, molestias repellendus accusamus. Cumque officiis vitae.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sezione 2 -->
+
+            <div class="sfondo-violet sezione-2 padding-top-bottom-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-50">
+                            <div class="contenitore-testo">
+                                <img src="./img/planning1.png" alt="illustarzione-donna">
+                                <h2 class="padding-top-bottom-100">Strategic Planning</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis tenetur hic unde deleniti amet earum excepturi, ducimus corporis ab alias autem. Quas facilis in nisi beatae praesentium architecto dicta ea!</p>
+                            </div>
+                            <div class="card padding-top-bottom-40"> 
+                                <img src="./img/planning2.png" alt="illustrazione-uomo">                               
+                                <h3 class="padding-top-bottom-40">App Development</h3>
+                                <p class="padding-bottom-40">Develop on-demand app for your delivery business to reach your targeted customers without any interruption.</p>
+                                <a href="#"><button class="btn-circle btn-r-violet"><i class="fa-solid fa-arrow-down-long"></i></button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
     </body>
 </html>
