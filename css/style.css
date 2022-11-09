@@ -20,12 +20,14 @@ img {
 
 /* Utilities */
 
-p {
+p, h4 {
     font-size: 1.1rem;
+    font-weight: 400;
 }
 
 h2 {
     font-size: 2rem;
+    line-height: 2rem;
 }
 
 h3 {
@@ -102,6 +104,10 @@ h3 {
 
 .text-align-left {
     text-align: left;
+}
+
+.text-align-center {
+    text-align: center;
 }
 
 .padding-top-bottom-20 {
@@ -231,6 +237,41 @@ nav i:hover ul {
     margin-top: 10%;
     border-radius: 25px;
     text-align: center;
+}
+
+.sezione-3 h2 {
+    color: #9792e4;
+}
+
+.sezione-3 .card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #9792e4;
+    color: #fff;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    margin-top: 10%;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.quote {
+    font-size: 3rem;
+    vertical-align: middle;
+    line-height: 0;
+}
+
+.contenuto-img {
+    display: flex;
+    justify-content: center;
+}
+
+.quotation-marks img {
+    border-radius: 50%;
+    width: 50vw;
+    height: 50vw;
+    object-fit: cover;
 }
 
 /* Media Query */
