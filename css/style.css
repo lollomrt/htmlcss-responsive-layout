@@ -150,6 +150,10 @@ h3 {
     background-color: #9792e4;
 }
 
+.letter-spacing {
+    letter-spacing: 0.1rem;
+}
+
 /* Header */
 
 header {
@@ -280,6 +284,31 @@ nav i:hover ul {
     width: 50vw;
     height: 50vw;
     object-fit: cover;
+}
+
+.sezione-4 .card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    color: #5a6e7f;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    margin-top: 10%;
+    border-radius: 25px;
+    text-align: left;
+}
+
+.sezione-4 h2, .sezione-4 h3 {
+    color: #9792e4;
+}
+
+.sezione-4 h2 {
+    font-size: 3rem;
+}
+
+.sezione-4 .col:nth-child(1) .card {
+    margin-top: 0;
 }
 
 /* Media Query */
