@@ -454,6 +454,11 @@ footer a:hover {
         flex-direction: row;
     }
 
+    .sezione-1 .text-align-left {
+        text-align: left;
+        width: 80%;
+    }
+
     .sezione-1 .col-33:nth-child(2) {
         width: calc(100% / 3 - 10px);
         display: flex;
@@ -551,6 +556,11 @@ footer a:hover {
 }
 
 @media screen and (min-width:992px) {
+
+    header .btn {
+        font-size: 1rem;
+    }
+
     .nav-desktop {
         display: block;
     }
@@ -592,6 +602,40 @@ footer a:hover {
     .sezione-1 .col-33:first-child .card img{
         width: 100%;
     }
+
+    .sezione-2 .col-50 {
+        width: calc(50% - 40px);
+    }
+
+    .sezione-2 .row {
+        vertical-align: flex-end;
+        gap: 40px;
+    }
+
+    .sezione-2 .contenitore-testo img {
+        padding-bottom: 100px;
+    }
+
+    .sezione-2 .card {
+        margin-top: 150px;
+    }
+
+    .sezione-4 .col-33 {
+        width: calc(100% / 3 - 20px);
+        margin-top: 0;
+    }
+
+    .sezione-4 .col:nth-child(4) .card {
+        margin-top: 0;
+    }
+
+    .sezione-5 .contenuto-img-left .quote-big {
+        position: absolute;
+        top: 0;
+        left: 150px;
+        right: 0;
+    }
+
 }
 
 @media screen and (max-width:992px) {
@@ -606,11 +650,19 @@ footer a:hover {
 }
 
 @media screen and (min-width:1200px) {
-    .sezione-1, .sezione-2, .sezione-3, .sezione-4, .sezione-5, .sezione-6, header .container {
+    .sezione-1, .sezione-2, .sezione-3, .sezione-4, .sezione-5, .sezione-6, header {
         width: 100%;
     }
 
     .container {
-        width: 1200px;
+        max-width: 1150px;
+    }
+
+    .sezione-5 .col-30 {
+        width: 25%;
+    }
+
+    .sezione-5 .col-70 {
+        width: 75%;
     }
 }
