@@ -286,7 +286,6 @@ nav i:hover ul {
 .quote {
     font-size: 1.6rem;
     line-height: 0px;
-    
 }
 
 .fa-quote-left {
@@ -304,8 +303,8 @@ nav i:hover ul {
 
 .quotation-marks img, .sezione-5 img {
     border-radius: 50%;
-    width: 50vw;
-    height: 50vw;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
 }
 
@@ -433,12 +432,30 @@ footer a:hover {
         width: calc(100% / 3 - 40px / 3);
     }
 
+    .sezione-1 .row {
+        gap: 20px;
+    }
+
+
+
     .sezione-1 {
         padding: 40px 0 100px;
     }
 
+    .sezione-1 .col-33 {
+        width: calc(100% / 3 - 40px / 3);
+        display: flex;
+        flex-direction: row;
+    }
+
     .sezione-1 .col-33:first-child {
-        width: 65%;
+        width: calc(100% / 3 * 2 - 10px);
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sezione-1 .col-33:nth-child(2) {
+        width: calc(100% / 3 - 10px);
         display: flex;
         flex-direction: row;
     }
@@ -448,7 +465,7 @@ footer a:hover {
     }
 
     .sezione-1 .card {
-        margin-top: 20px;
+        margin-top: 0;
     }
 
     .sezione-1 .col-33:first-child .btn {
@@ -466,8 +483,8 @@ footer a:hover {
     }
 
     .sezione-3 .contenuto-img img {
-        width: 25vw;
-        height: 25vw;
+        width: 200px;
+        height: 200px;
         margin-right: 40px;
     }
 
@@ -502,8 +519,8 @@ footer a:hover {
     }
 
     .sezione-5 img {
-        width: 100%;
-        height: 100%;
+        width: 200px;
+        height: 200px;
     }
 
     .sezione-5 .contenuto-testo:first-child {
@@ -513,7 +530,9 @@ footer a:hover {
     .sezione-5 .contenuto-img-left .quote-big {
         position: absolute;
         top: 0;
+        left: initial;
         right: 0;
+        padding-right: 0;
         color: #9792e4;
     }
 
@@ -529,12 +548,6 @@ footer a:hover {
     footer .row:last-child {
         padding-top: 0;
     }
-
-
-    /*.sezione-1 .col-33:first-child .card {
-        display: flex;
-        flex-direction: row;
-    }*/
 }
 
 @media screen and (min-width:992px) {
@@ -545,14 +558,59 @@ footer a:hover {
     .nav-hamburger {
         display: none;
     }
+
+    .nav-desktop ul {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        color: #fff;
+    }
+
+    .nav-desktop li {
+        padding: 0 20px;
+    }
+
+    .nav-desktop li:last-child {
+        padding-right: 0;
+    }
+
+    .nav-desktop a {
+        text-decoration: none;
+        color: #fff
+    }
+
+    header .btn {
+        padding: 10px 20px;
+        vertical-align: middle;
+    }
+
+    .sezione-1 .col-33:first-child .card{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sezione-1 .col-33:first-child .card img{
+        width: 100%;
+    }
 }
 
-@media screen and (max-width:991px) {
+@media screen and (max-width:992px) {
     .nav-desktop {
         display: none;
     }
 
     .nav-hamburger {
         display: block;
+    }
+
+}
+
+@media screen and (min-width:1200px) {
+    .sezione-1, .sezione-2, .sezione-3, .sezione-4, .sezione-5, .sezione-6, header .container {
+        width: 100%;
+    }
+
+    .container {
+        width: 1200px;
     }
 }
